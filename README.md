@@ -2,7 +2,7 @@
 
 Bash SSH dashboard that turns server metrics into a living creature with health bars, warnings, and status quips.
 
-![Demo](assets/demo.jpg)
+![Demo](assets/demo.gif)
 
 ## What it do:
 - ASCII creature changes mood based on server health (happy/okay/worried/stressed/dead/sleeping)
