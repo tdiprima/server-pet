@@ -1,4 +1,4 @@
-# server-pet.sh — Tamagotchi for infrastructure.
+# server-pet.sh — Tamagotchi-style Linux server dashboard
 
 Bash SSH dashboard that turns server metrics into a living creature with health bars, warnings, and status quips.
 
