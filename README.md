@@ -28,4 +28,32 @@ Thresholds: CPU/MEM warn at 70%, crit at 90%. Disk warn 80%, crit 95%. All confi
 
 Demo mode runs with no servers configured — randomizes stats, occasional spikes. Try it: `./server-pet.sh`
 
+## SSH key auth
+
+Set it up once, no passwords after.
+
+```sh
+# 1. Generate key (skip if you already have one)
+ssh-keygen -t ed25519
+
+# 2. Copy to each server
+ssh-copy-id user@your-server
+
+# 3. Test
+ssh user@your-server  # should drop in with no prompt
+```
+
+If you already have keys but still get prompted, SSH multiplexing keeps one connection open and reuses it.
+
+Add to `~/.ssh/config`:
+
+```
+Host *
+    ControlMaster auto
+    ControlPath ~/.ssh/sockets/%r@%h-%p
+    ControlPersist 600
+```
+
+Then `mkdir -p ~/.ssh/sockets`. One auth per server, reused for 10 minutes.
+
 <br>
