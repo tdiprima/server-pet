@@ -288,7 +288,7 @@ render_header() {
     printf "${BOLD}${CYAN}"
     printf '═%.0s' $(seq 1 "${width}")
     printf "\n"
-    printf "  SERVER PET — Infrastructure Tamagotchi"
+    printf "  SERVER PET — Infrastructure Tamagotchi-style"
     printf "%*s" $((width - 42)) ""
     printf "\n"
     printf '═%.0s' $(seq 1 "${width}")
