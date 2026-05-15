@@ -405,7 +405,7 @@ handle_input() {
     local key
     if read -rsn1 -t 0.1 key 2>/dev/null; then
         case "${key}" in
-            q|Q) cleanup; exit 0 ;;
+            q|Q) exit 0 ;;
             r|R) return 0 ;;
             +)   ((REFRESH_SECONDS > 1)) && ((REFRESH_SECONDS--)) ;;
             -)   ((REFRESH_SECONDS < 30)) && ((REFRESH_SECONDS++)) ;;
