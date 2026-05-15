@@ -1,5 +1,9 @@
 # server-pet.sh — Tamagotchi for infrastructure.
 
+Bash SSH dashboard that turns server metrics into a living creature with health bars, warnings, and status quips.
+
+![Demo](assets/demo.jpg)
+
 ## What it do:
 - ASCII creature changes mood based on server health (happy/okay/worried/stressed/dead/sleeping)
 - Color-coded bar graphs for CPU, MEM, DISK, SWAP
