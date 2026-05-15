@@ -4,8 +4,6 @@
 # Monitors remote Linux servers via SSH, shows health as a living creature.
 # Run with no args for demo mode, or configure servers in SERVERS array.
 
-set -euo pipefail
-
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
