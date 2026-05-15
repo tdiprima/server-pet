@@ -30,19 +30,6 @@ Demo mode runs with no servers configured — randomizes stats, occasional spike
 
 ## SSH key auth
 
-Set it up once, no passwords after.
-
-```sh
-# 1. Generate key (skip if you already have one)
-ssh-keygen -t ed25519
-
-# 2. Copy to each server
-ssh-copy-id user@your-server
-
-# 3. Test
-ssh user@your-server  # should drop in with no prompt
-```
-
 If you already have keys but still get prompted, SSH multiplexing keeps one connection open and reuses it.
 
 Add to `~/.ssh/config`:
